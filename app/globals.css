@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+body {
+  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.sidebar-dark {
+  background: linear-gradient(180deg, #343a40 0%, #23272b 100%);
+}
+
+.sidebar-mini .sidebar {
+  transition: margin-left 0.3s ease-in-out;
+}
+
+@media (min-width: 768px) {
+  .sidebar-mini.sidebar-collapse .sidebar {
+    margin-left: -250px;
+  }
+
+  .sidebar-mini.sidebar-collapse .content-wrapper,
+  .sidebar-mini.sidebar-collapse .main-footer {
+    margin-left: 0 !important;
+  }
+}
